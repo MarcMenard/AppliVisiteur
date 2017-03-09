@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppliVisiteur</string>
+    <string name="classements">Classements</string>
+    <string name="plannings">Plannings</string>
+</resources>
