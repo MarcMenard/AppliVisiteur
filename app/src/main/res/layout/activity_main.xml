@@ -26,7 +26,7 @@
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/buttoncl"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -42,7 +42,7 @@
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/button20"
+                android:id="@+id/buttonpl"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

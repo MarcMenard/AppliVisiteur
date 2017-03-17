@@ -2,4 +2,8 @@
     <string name="app_name">AppliVisiteur</string>
     <string name="classements">Classements</string>
     <string name="plannings">Plannings</string>
+    <string name="groupe_1">Groupe 1</string>
+    <string name="groupe_2">Groupe 2</string>
+    <string name="title_activity_spinner_with_toast">SpinnerWithToastActivity</string>
+    <string name="menu_settings">Settings</string>
 </resources>

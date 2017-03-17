@@ -1,33 +1,29 @@
 package com.example.marcmenard.applivisiteur;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
+
 
 public class accueil_classement extends AppCompatActivity {
-
-    ListView mListView;
-
-    String[] values = new String[]{
-            "Koala", "Pingouins"
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accueil_classement);
 
-        mListView = (ListView) findViewById(R.id.listView);
+        final ListView contentGR = (ListView) findViewById(R.id.contentGR);
 
-        AdapteurDeListeGroupeAcl adaptateur = new AdapteurDeListeGroupeAcl(this, values);
-        mListView.setAdapter(adaptateur);
+        Button buttonGR = (Button) findViewById(R.id.buttongr);
+        buttonGR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                contentGR.setVisibility(View.INVISIBLE);
+            }
+        });
 
-    }
-
-    protected void onListItemClick(ListView mListView, View v, int position, long id) {
-        Toast.makeText(this, "Position : " + position, Toast.LENGTH_LONG).show();
     }
 }

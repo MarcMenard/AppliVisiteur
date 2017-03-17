@@ -9,12 +9,38 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.marcmenard.applivisiteur.accueil_classement">
 
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/mListView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/groupe_1"
+            android:id="@+id/buttongr"
+            android:layout_gravity="center_horizontal"
+            android:content="@+id/contentGR"/>
+
+        <ListView
+            android:id="@id/contentGR"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/buttongr"
+            android:visibility="invisible"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/groupe_2"
+            android:id="@+id/buttongr2"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:layout_below="@id/buttongr"
+            android:content="@+id/contentGR2"/>
+
+        <ListView
+            android:id="@id/contentGR2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttongr2"
+            android:visibility="visible"/>
+
+
 
 </RelativeLayout>

@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".accueil_classement" />
-        <activity android:name=".planning_general"></activity>
+        <activity android:name=".planning_general" />
+        <activity android:name=".classement_groupe"></activity>
     </application>
 
 </manifest>
