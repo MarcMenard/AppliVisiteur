@@ -2,12 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.marcmenard.applivisiteur">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/applivisiteur_icone"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/NoTitleBar">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,7 +19,8 @@
         </activity>
         <activity android:name=".accueil_classement" />
         <activity android:name=".planning_general" />
-        <activity android:name=".classement_groupe"></activity>
+        <activity android:name=".JSON_Planning" />
+        <activity android:name=".JSON_Classement"></activity>
     </application>
 
 </manifest>
